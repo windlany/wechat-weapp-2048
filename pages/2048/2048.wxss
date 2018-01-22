@@ -1,0 +1,168 @@
+/* pages/2048/2048.wxss */
+.container {
+  color: #776e65;
+  background-color: #faf8ee;
+  height: 100vh;
+  position: relative;
+} 
+.head {
+  text-align: center;
+  position: absolute;
+  top: 7vh;
+}
+.lside {
+  width: 130px;
+  height: 100px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+  margin-right: 30px;
+}
+.title {
+  font-size: 40px;
+  font-weight: bold;  
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+.play {
+  font-size: 20px;
+  background-color: #bbada0;
+  color: #fff;
+  border-radius: 5px;
+  width: 130px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.rside {
+  background-color: #bbada0;
+  float: right;
+  width: 100px;
+  height: 100px; 
+  padding-top: 10px;
+  box-sizing: border-box;
+  border-radius: 5px; 
+  opacity: 0.7;
+}
+.rside text {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.score {
+  color: #fff;
+}
+/* =========================== game ====================  */
+.game {
+  margin-top: 15vh;
+  position: absolute;
+  padding-top: 5vw; 
+  padding-left: 1vw;
+  background: #bbada0;
+  border-radius: 6px;
+  width: 93vw;
+  height: 93vw;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;/* 禁用系统默认菜单 */
+  -ms-touch-callout: none;
+  -webkit-user-select: none;/* css控制文字不能被选中 */
+  -moz-user-select: none;
+  -ms-user-select: none;/* 当触控事件发生在元素上时，不进行任何操作 */
+  -ms-touch-action: none;
+  touch-action: none;
+}
+.cell {
+  width: 19vw;
+  height: 19vw; 
+  margin-left: 3vw;
+  margin-bottom: 3vw;
+  float: left;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background: rgba(238, 228, 218, 0.35);
+  overflow: hidden;
+}
+.cell-con { 
+  width: 19vw;
+  height: 19vw; 
+  line-height: 19vw;
+  position: absolute;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 5px;
+}  
+.cell-con-2 { background: #eee4da; }
+.cell-con-4 { background: #ede0c8; }
+.cell-con-8 {
+  color: #f9f6f2;
+  background: #f2b179;
+}
+.cell-con-16 {
+  color: #f9f6f2;
+  background: #f59563;
+}
+.cell-con-32 {
+  color: #f9f6f2;
+  background: #f67c5f;
+}
+.cell-con-64 {
+  color: #f9f6f2;
+  background: #f65e3b;
+}
+.cell-con-128 {
+  color: #f9f6f2;
+  background: #edcf72;
+  font-size: 30px;
+}
+.cell-con-256 {
+  color: #f9f6f2;
+  font-size: 30px;
+  background: #edcc61;
+}
+.cell-con-512 {
+  color: #f9f6f2;
+  font-size: 30px;
+  background: #edc850;
+}
+.cell-con-1024 {
+  color: #f9f6f2;
+  font-size: 25px;
+  background: #edc53f;
+}
+.cell-con-2048 {
+  color: #f9f6f2;
+  font-size: 25px;
+  background: #edc22e;
+}  
+.game-over {
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 20vw;
+  box-sizing: border-box;
+} 
+.game-over text {
+  display: block;
+}
+.nowScore {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.pro {
+  font-weight: bold;
+  font-size: 30px;
+}
