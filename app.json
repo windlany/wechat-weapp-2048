@@ -1,12 +1,12 @@
 {
   "pages":[
-    "pages/2048/2048",
     "pages/index/index",
+    "pages/2048/2048",
     "pages/logs/logs"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#faf8ee",
     "navigationBarTitleText": "2048小游戏",
     "navigationBarTextStyle":"black"
   }
