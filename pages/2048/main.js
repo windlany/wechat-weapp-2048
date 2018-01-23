@@ -11,6 +11,7 @@ Main.prototype = {
     this.board = new Board(this.size);
     this.bproto = this.board.__proto__;
     this.setDataRandom(); // 随机填充 
+    this.startData = 1;
   },
   setDataRandom() {  // 随机填充
     for(var i = 0; i < this.startData; i++) {

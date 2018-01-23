@@ -37,7 +37,7 @@ Page({
       over: true 
     });
   
-    if (this.data.score == 2048) {
+    if (this.data.score >= 2048) {
       this.setData({ 
         endMsg: '恭喜达到2048！'
       });
