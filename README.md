@@ -1,5 +1,6 @@
-# 2048
+﻿# 2048
 ## 效果图
+![](https://github.com/windlany/2048/blob/master/img/index.png)
 ![](https://github.com/windlany/2048/blob/master/img/exp1.png)
 ![](https://github.com/windlany/2048/blob/master/img/exp2.png)
 ## 算法
