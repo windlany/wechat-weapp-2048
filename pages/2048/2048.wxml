@@ -17,7 +17,7 @@
 
   <view class="game"> 
     <!-- 矩阵 -->
-    <view bindtouchstart="touchStart" bindtouchmove="touchMove" bindtouchend="touchEnd">
+    <view bindtouchstart="touchStart" bindtouchend="touchEnd">
       <view class='row' wx:for="{{num}}" wx:for-item="row" wx:key="row.key" >
         <view class='cell' wx:for="{{row}}" wx:for-item="cell" wx:key="cell.key">
           <view class='cell-con cell-con-{{cell}}'>
