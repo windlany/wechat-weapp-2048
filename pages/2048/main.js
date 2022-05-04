@@ -36,34 +36,34 @@ Main.prototype = {
 
     var list = this.combine(curList);
     var result = [
-      [],
-      [],
-      [],
-      []
+        [],
+        [],
+        [],
+        []
     ];
 
     for (var i = 0; i < this.size; i++)
-      for (var j = 0; j < this.size; j++) {
-        switch (dir) {
-          case 0:
-            result[i][j] = list[j][i];
-            break;
-          case 1:
-            result[i][j] = list[i][this.size - 1 - j];
-            break;
-          case 2:
-            result[i][j] = list[j][this.size - 1 - i];
-            break;
-          case 3:
-            result[i][j] = list[i][j];
-            break;
+        for (var j = 0; j < this.size; j++) {
+            switch (dir) {
+                case 0:
+                    result[i][j] = list[j][i];
+                    break;
+                case 1:
+                    result[i][j] = list[i][this.size - 1 - j];
+                    break;
+                case 2:
+                    result[i][j] = list[j][this.size - 1 - i];
+                    break;
+                case 3:
+                    result[i][j] = list[i][j];
+                    break;
+            }
         }
-      }
     this.board.grid = result;
     this.setDataRandom();
 
     return result;
-  },
+},
   formList(dir) { // 根据滑动方向生成list的四个数组
     var list = [
       [],
